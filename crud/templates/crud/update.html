@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>update data</title>
+    <style>
+      input[type="number"] {
+        width: 20%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 20%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      a{
+        text-decoration: none;
+      }
+      a:hover{
+        border: 2px solid black;
+        border-radius: 1.5px;
+        resize: horizontal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Update employee {{name}}</h1>
+    <form action="" method="post">
+      {% csrf_token %} {{fm.as_p}}
+      <input type="submit" value="update" />
+      <div class="hl">
+        <a href="{% url 'pp' %}"> Backto home</a>
+      </div>
+    </form>
+  </body>
+</html>
