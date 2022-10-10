@@ -1,6 +1,6 @@
 # CRUD (Create,Read,Update AND Delete)
 This is a function based **CRUD OPERAION**
 >## Create and Read view
-![](images/SS2.png)
+![](IMAGES/SS2.png)
 > ## Update view  
-![](images/SS1.png)
+![](IMAGES/SS1.png)
